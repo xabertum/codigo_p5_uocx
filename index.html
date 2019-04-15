@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Enorelax - Experiencias enoturísticas</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Main Styles -->
+
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos_card.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<!-- Custom styles -->
+	<link href="css/carousel.css" rel="stylesheet">
+
+	<!--estilos para leaflet-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/MarkerCluster.css" />
+	<link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/leaflet.zoomhome.css" />
+	<link rel="stylesheet" href="css/mapa.css" />
+
+	<!--js requeridos para leaflet-->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+	<script src="js/leaflet.markercluster-src.js"></script>
+	<script src="js/leaflet.zoomhome.min.js"></script>
+	<script src="js/bodegas.js"></script>
+	<script src="js/limite.js"></script>
+
+
+</head>
+
+<body>
+
+	<header class="header">
+
+		<!-- Top Bar -->
+
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col d-flex flex-row">
+						<div class="user_box ml-auto">
+							<div class="user_box_login user_box_link"><a href="index.html"> <img class="margin-top" src="images/spain.png" alt=""></a></div>
+							<div class="user_box_register user_box_link"><img class="margin-top" src="images/united-kingdom.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main Navigation -->
+
+		<nav class="main_nav">
+			<div class="container">
+				<div class="row">
+					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+						<div class="logo_container">
+							<div class="logo"><a href="#"><img height="95px" src="images/Logo_web_Enorelax.png" alt="">EnoRelax</a></div>
+						</div>
+						<div class="main_nav_container ml-auto">
+							<ul class="main_nav_list">
+								<li class="main_nav_item"><a href="#">Inicio</a></li>
+								<li class="main_nav_item"><a href="about.html">Quiénes Somos</a></li>
+								<li class="main_nav_item"><a href="offers.html">Packs</a></li>
+								<li class="main_nav_item"><a href="blog.html">news</a></li>
+								<li class="main_nav_item"><a href="contact.html">contact</a></li>
+							</ul>
+						</div>
+						<div class="hamburger float-right">
+							<i class="fa fa-bars trans_200"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container">
+				<div class="menu_close"></div>
+			</div>
+			<div class="logo menu_logo"><a href="#"><img src="images/Logo_web_Enorelax.png" alt=""></a></div>
+			<ul>
+				<li class="menu_item"><a href="#">home</a></li>
+				<li class="menu_item"><a href="about.html">Quiénes somos</a></li>
+				<li class="menu_item"><a href="offers.html">offers</a></li>
+				<li class="menu_item"><a href="blog.html">news</a></li>
+				<li class="menu_item"><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<main role="main">
+
+		<div class="home">
+
+			<!-- Home Slider -->
+
+			<div class="home_slider_container">
+
+				<div class="owl-carousel owl-theme home_slider">
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_2.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_3.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Home Slider Nav - Prev -->
+				<div class="home_slider_nav home_slider_prev">
+					<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					 y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+						<defs>
+							<linearGradient id='home_grad_prev'>
+								<stop offset='0%' stop-color='#fa9e1b' />
+								<stop offset='100%' stop-color='#8d4fff' />
+							</linearGradient>
+						</defs>
+						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+					M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+					C22.545,2,26,5.541,26,9.909V23.091z" />
+						<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+					11.042,18.219 " />
+					</svg>
+				</div>
+
+				<!-- Home Slider Nav - Next -->
+				<div class="home_slider_nav home_slider_next">
+					<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					 y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+						<defs>
+							<linearGradient id='home_grad_next'>
+								<stop offset='0%' stop-color='#fa9e1b' />
+								<stop offset='100%' stop-color='#8d4fff' />
+							</linearGradient>
+						</defs>
+						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+				M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+				C22.545,2,26,5.541,26,9.909V23.091z" />
+						<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+				17.046,15.554 " />
+					</svg>
+				</div>
+
+				<!-- Home Slider Dots -->
+
+				<div class="home_slider_dots">
+					<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+						<li class="home_slider_custom_dot active">
+							<div></div>01.
+						</li>
+						<li class="home_slider_custom_dot">
+							<div></div>02.
+						</li>
+						<li class="home_slider_custom_dot">
+							<div></div>03.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!------- Quienes SOMOS --------->
+
+		<div class="container marketing" style="text-align:center;">
+			<h1>Quienes somos</h1>
+			<br>
+			<img class="img-thumbnail" src="images/anuncio_faldon.jpg" alt="Generic placeholder image" width="500" height="400">
+			<br>
+			<br>
+			<p>En una sociedad en la que no disponemos de tiempo para
+				disfrutar y relajarnos, creamos Enorelax, y ofrecemos
+				experiencias de turismo enológico que nos conecten con el
+				bienestar y la naturaleza.
+				Somos un equipo muy comprometido con nuestro proyecto,
+				trabajaremos para que su experiencia sea extraordinaria.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+
+		<div class="container marketing">
+
+			<!-- ACTIVIDADES -->
+			<h1 style="text-align:center;">Nuestros packs</h1>
+			<br>
+			<div class="row">
+
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/foto_1.jpg" alt="Foto de un viñedo" width="300" height="250">
+					<h2>Catas de vino</h2>
+					<p>Colaboramos con diferentes bodegas con D.O. de Cariñena que harán catas y visitas a las bodegas más exclusivas
+						de la zona.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">Comprar &raquo;</a></p>
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/foto_2.jpg" alt="Foto de un spa" width="300" height="250">
+					<h2>Spa + Cata de vino</h2>
+					<p>Tenemos disponibles varios packs con spa, masajes o meditación y elegimos los mejores centros de la localidad.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">Comprar &raquo;</a></p>
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/foto_3.jpg" alt="Foto senderismo" width="300" height="250">
+					<h2>Ruta + Cata de vino</h2>
+					<p>En este pack podrás disfrutar de la naturaleza de Aragón combinada con visitas a las mejores bodegas de
+						Cariñena.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">Comprar &raquo;</a></p>
+				</div><!-- /.col-lg-4 -->
+			</div><!-- /.row -->
+
+
+
+			<!-- START THE FEATURETTES -->
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Sugerencia de actividad mensual:<span class="text-muted"> EnoRelax especial Navidad</span></h2>
+					<p class="lead">En el mes de diciembre tendremos en todas las actividades la opción añadir una cena, puedes verlos
+						en el apartado Restauración, por solo 15€ más.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="rounded-circle" src="images/foto_4.jpg" alt="Foto senderismo" width="450" height="350">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 order-md-2">
+					<h2 class="featurette-heading">Referencias <span class="text-muted">de otras Denominaciones de Origen</span></h2>
+					<p class="lead">Cada mes, realizamos una recomendación enológica sobre un vino de otra Denominación de Origen.
+						Este mes hemos seleccionado Coto de Hayas Roble, un vino de la D.O. del Campo de Borja, elaborado a partir de las
+						variedades Tempranillo y Cabernet Sauvignon. Se trata de un vino joven con una excelente relación calidad/precio.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="rounded-circle" src="images/cotodehayas.jpg" alt="Foto Coto de Hayas" width="430" height="400">
+				</div>
+			</div>
+
+
+			<hr class="featurette-divider">
+
+			<!-- Ofertas -->
+			<!--primer bloque-->
+			<div class="row">
+
+				<div class="col-lg-4 col-sm-6 portfolio-item">
+					<div class="card ">
+						<div class="card-body">
+							<div class="card-header">RESTAURACIÓN</div>
+							<div class="project" style="background-image: url('images/restaurante.jpg') ">
+								<div class="project-hover">
+									<h5 class="card-title">RESTAURACIÓN</h5>
+									<p>La comarca de Cariñena cuenta con una excelente oferta de establecimientos de restauración centrada en la
+										cocina tradicional aragonesa.</p>
+									<a href="restauracion.php">DESDE 20€</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 portfolio-item">
+					<div class="card">
+						<div class="card-body">
+							<div class="card-header">ALOJAMIENTOS</div>
+							<div class="project" style="background-image: url('images/alojamiento.jpg')">
+								<div class="project-hover">
+									<h5 class="card-title">ALOJAMIENTOS</h5>
+									<p>La oferta de alojamientos de la Ruta del Vino se compone de varios Hoteles, Hostales, Pensiones,
+										apartamentos Turísticos y Casas Rurales</p>
+									<a href="alojamientos.php">DESDE 30€</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="col-lg-4 col-sm-6 portfolio-item">
+					<div class="card ">
+						<div class="card-body">
+							<div class="card-header">MUSEO DEL VINO</div>
+							<div class="project" style="background-image: url('images/museo_vino.jpg')">
+								<div class="project-hover">
+									<h5 class="card-title">MUSEO DEL VINO</h5>
+									<p>El Museo del Vino forma parte de las dependencias de la Casa de la Viña y el Vino, que se encuentra en una
+										bodega fechada en 1918.</p>
+									<a href="museovino.php">ACCEDE</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- segundo bloque-->
+
+			<!-- Mapa bodegas -->
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="featurette-heading">Mapa de las Bodegas de la D.O.</h2>
+					<p class="lead">Pulsa sobre las ubicaciones para conocer los datos de cada una de las bodegas.</p>
+				</div>
+				<div class="col-lg-12 ">
+					<div id='map' class="custom-popup">
+						<script>
+							//crea el mapa, centra la vista y define el zoom
+							var map = L.map('map').setView([41.37, -1.175], 10);
+							map.removeControl(map.zoomControl);
+
+							//estilo para los límites de la DO
+							var estilolimite = {
+								"color": "#CC2EFA",
+								"weight": 2,
+								"opacity": 0.6
+							};
+
+							//añade los límites de la DO
+							var limite = L.geoJson(limite, {
+								style: estilolimite
+							});
+							limite.addTo(map);
+
+							//añade Open Street map como mapa base
+							var base = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+							base.addTo(map);
+
+
+
+							var wikimedia = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
+								attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
+							});
+
+							//capa ortofoto aérea
+							var ortofoto = L.tileLayer(
+								'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+									attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+								});
+
+							//crea el clúster de puntos
+							var markers = L.markerClusterGroup();
+
+							//función que muestra el nombre de la bodega en el popup
+							function popup(feature, layer) {
+
+								var nombre = feature.properties.CEN_DS_NOM;
+								var salto = "<br>";
+								var municipio = feature.properties.MUNICIPIO;
+								var direccion = feature.properties.LOC_DS_DIR;
+								var telefono = feature.properties.LOC_DS_TEL;
+								var paginaweb = feature.properties.LOC_DS_WEB;
+								var htmlString = "<a href=" + paginaweb + " target='_blank'>Ver página web</a><br>";
+								layer.bindPopup(nombre.concat(salto, direccion, ' - ', municipio, salto, telefono, salto, htmlString));
+
+							}
+
+							// añade puntos al cluster
+							var puntos = L.geoJson(bodegas, {
+								onEachFeature: popup
+							});
+							markers.addLayer(puntos);
+
+							// añade el cluster al mapa
+							map.addLayer(markers);
+
+							//ajusta la vista a la extensión de la D.O.
+							map.fitBounds(limite.getBounds());
+
+							//añade control capas										
+							var baseMapas = {
+								"Mapa base": base,
+								"Wikimedia": wikimedia,
+								"Foto aérea": ortofoto,
+							};
+							var overlayMapas = {
+								"Límite D.O.": limite,
+								"Bodegas": markers
+							};
+							L.control.layers(baseMapas, overlayMapas, {
+								position: 'topright', // 'topleft', 'bottomleft', 'bottomright'
+								collapsed: true // true
+							}).addTo(map);
+
+
+							//añade botón para regresar al zoom original
+							var zoomHome = L.Control.zoomHome().addTo(map);
+
+
+							//añade escala gráfica
+							L.control.scale().addTo(map);
+						</script>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Mapa bodegas -->
+			<hr class="featurette-divider">
+
+			<!-- /END THE FEATURETTES -->
+
+		</div><!-- /.container -->
+
+
+		<!-- FOOTER -->
+		<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+			<div class="container">
+				<div class="row row-30">
+					<div class="col-md-4 col-xl-5">
+						<div class="pr-xl-4">
+							<p> Enorelax ofrece una experiencia de turismo enológico única a sus clientes.
+							</p>
+							<!-- Rights-->
+							<p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Enorelax</span><span>. </span><span>Todos
+									los derechos reservados.</span></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h5>Contacto</h5>
+						<dl class="contact-list">
+							<dt>Dirección:</dt>
+							<dd>Paseo de Sagasta 30, Zaragoza - 50004</dd>
+						</dl>
+						<dl class="contact-list">
+							<dt>email:</dt>
+							<dd><a href="mailto:#">info@enorelax.com</a></dd>
+						</dl>
+						<dl class="contact-list">
+							<dt>Teléfonos:</dt>
+							<dd><a href="tel:#">+34 976 123456</a> <span> | </span> <a href="tel:#">+34 600 010203</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="col-md-4 col-xl-3">
+						<h5>Enlaces</h5>
+						<ul class="nav-list">
+							<li><a href="contacto.php">Formulario de contacto</a></li>
+							<li><a href="privacidad.php">Política de privacidad</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	</main>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

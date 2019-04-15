@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Enorelax - Experiencias enoturísticas</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- -->
+
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos_card.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+  
+    <!--estilos para leaflet-->	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>	
+	<link rel="stylesheet" href="css/MarkerCluster.css" />
+	<link rel="stylesheet" href="css/MarkerCluster.Default.css" />	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/leaflet.zoomhome.css" />
+	<link rel="stylesheet" href="css/mapa.css" />
+	
+	<!--js requeridos para leaflet-->	
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+	<script src="js/leaflet.markercluster-src.js"></script>
+	<script src="js/leaflet.zoomhome.min.js"></script>
+	<script src="js/bodegas.js"></script>
+	<script src="js/limite.js"></script>
+
+  
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">EnoRelax</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <!--<form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>-->
+      </div>
+         <div class="multi-idioma">
+            <ul>
+                <li> <a class="en" href="index_en.html"><img src="images/united-kingdom.png" alt="English" /></a></li>
+                <li> <a class="es" href="index.html"><img src="images/spain.png" alt="Castellano" /></a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div class="home">
+
+			<!-- Home Slider -->
+
+			<div class="home_slider_container">
+
+				<div class="owl-carousel owl-theme home_slider">
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_2.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slider Item -->
+					<div class="owl-item home_slider_item">
+						<div class="home_slider_background" style="background-image:url(images/home_slider_3.jpg)"></div>
+
+						<div class="home_slider_content text-center">
+							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+								<h1>discover</h1>
+								<h1>the world</h1>
+								<div class="button home_slider_button">
+									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Home Slider Nav - Prev -->
+				<div class="home_slider_nav home_slider_prev">
+					<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					 y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+						<defs>
+							<linearGradient id='home_grad_prev'>
+								<stop offset='0%' stop-color='#fa9e1b' />
+								<stop offset='100%' stop-color='#8d4fff' />
+							</linearGradient>
+						</defs>
+						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+					M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+					C22.545,2,26,5.541,26,9.909V23.091z" />
+						<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+					11.042,18.219 " />
+					</svg>
+				</div>
+
+				<!-- Home Slider Nav - Next -->
+				<div class="home_slider_nav home_slider_next">
+					<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					 y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+						<defs>
+							<linearGradient id='home_grad_next'>
+								<stop offset='0%' stop-color='#fa9e1b' />
+								<stop offset='100%' stop-color='#8d4fff' />
+							</linearGradient>
+						</defs>
+						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+				M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+				C22.545,2,26,5.541,26,9.909V23.091z" />
+						<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+				17.046,15.554 " />
+					</svg>
+				</div>
+
+				<!-- Home Slider Dots -->
+
+				<div class="home_slider_dots">
+					<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+						<li class="home_slider_custom_dot active">
+							<div></div>01.
+						</li>
+						<li class="home_slider_custom_dot">
+							<div></div>02.
+						</li>
+						<li class="home_slider_custom_dot">
+							<div></div>03.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+    
+    
+    <!--
+    
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="images/home_slider_1.jpg"
+            alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="images/home_slider_2.jpg"
+            alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="images/home_slider_3.jpg"
+            alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+-->
+
+    <!-- Marketing messaging and featurettes
+      ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-------quienes SOMOS--------->
+      
+         <div class="container marketing"  style="text-align:center;">
+          <h1>About us</h1>
+             <br>
+          <img class="img-thumbnail" src="images/anuncio_faldon.jpg" alt="EnoRelax add" width="500" height="400" >
+            <br>
+            <br>
+          <p>In a society where we do not have time to
+                enjoy and relax, we create Enorelax, and we offer
+                experiences of wine tourism that connect us with the
+                wellness and nature.
+                            We are a team very committed to our project,
+                We will work to make your experience extraordinary.</p>
+             <br>
+             <br>
+             <br>
+             <br>
+      </div>
+      
+    <div class="container marketing">
+
+      <!-- ACTIVIDADES -->
+      <h1 style="text-align:center;">Our packs</h1>
+      <br>
+      <div class="row">
+        
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="images/foto_1.jpg"
+            alt="vinyard" width="300" height="250">
+          <h2>Wine tasting</h2>
+          <p>We collaborate with different wineries like D.O. of Cariñena that will make tastings and visits to the most exclusive wineries in the area.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Buy &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="images/foto_2.jpg"
+            alt="Picture of a spa" width="300" height="250">
+          <h2>Spa + Wine tasting</h2>
+          <p>We have several packs available with spa, massage or meditation and we choose the best centers in town.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Buy &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="images/foto_3.jpg"
+            alt="Route in the wood" width="300" height="250">
+          <h2>Route + Wine tasting</h2>
+          <p>In this pack you can enjoy the nature of Aragon combined with visits to the best wineries in Cariñena.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Buy &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+        
+
+
+      <!-- START THE FEATURETTES -->
+        
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Monthly activity suggestion<span class="text-muted"> EnoRelax Christmas special</span></h2>
+          <p class="lead">In the month of December we will have the option to add a dinner in all the activities, you can see them in the Restoration section, for only 15€ more.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="rounded-circle" src="images/foto_4.jpg"
+            alt="Foto senderismo" width="450" height="350">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading"> Relevant References Relating to <span class="text-muted">other Designation of Origin.</span></h2>
+          <p class="lead">Each month, we make a wine recommendation about a wine of another Designation of Origin. This month we have selected Coto de Hayas Roble, a wine from D.O. del Campo de Borja, made from the Tempranillo and Cabernet Sauvignon varieties. It is a young wine with an excellent quality/price ratio.</p>
+        </div>
+		<div class="col-md-5">
+          <img class="rounded-circle" src="images/cotodehayas.jpg"
+            alt="Foto Coto de Hayas" width="430" height="400">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+	  
+	  <!-- Ofertas -->
+	  	<!--primer bloque-->
+      <div class="row">
+        
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+			<div class="card ">			
+				<div class="card-body">
+				<div class="card-header">RESTAURANTS</div>			
+					<div class="project" style="background-image: url('images/restaurante.jpg') ">			  
+						<div class="project-hover" >
+							<h5 class="card-title">RESTAURANTS</h5>	
+							<p>The region of Cariñena has an excellent offer of catering establishments focused on traditional Aragonese cuisine.</p>
+							<a href="restauracion_en.php">FROM 20€</a>			
+						</div>		
+				
+					</div>   
+				</div>
+			</div>
+        </div>
+		
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+			<div class="card">			
+				<div class="card-body">
+				<div class="card-header">ACCOMMODATION</div>			
+					<div class="project" style="background-image: url('images/alojamiento.jpg')">			  
+						<div class="project-hover" >
+							<h5 class="card-title">ACCOMMODATION</h5>	
+							<p>The accommodation offer of the Ruta del Vino is made up of several Hotels, Tourist apartments and Rural Houses.</p>
+							<a href="alojamientos_en.php">FROM 30€</a>			
+						</div>		
+				
+					</div>   
+				</div>
+			</div>
+        </div>
+		
+		
+			
+		
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+			<div class="card ">			
+				<div class="card-body">
+				<div class="card-header">WINE MUSEUM</div>			
+					<div class="project" style="background-image: url('images/museo_vino.jpg')">			  
+						<div class="project-hover" >
+							<h5 class="card-title">WINE MUSEUM</h5>	
+							<p>The Wine Museum is part of the premises of the House of Vine and Wine, which is located in a winery dated in 1918.</p>
+							<a href="museovino_en.php">ACCESS</a>			
+						</div>				
+					</div>   
+				</div>
+			</div>
+        </div>
+	</div>
+	<!-- segundo bloque-->
+	  
+	  <!-- Mapa bodegas -->
+			<div class="row">
+				<div class="col-md-12">
+				  <h2 class="featurette-heading">Map of the wineries of the D.O.</h2>
+				  <p class="lead">Click on the locations to know the data of each of the wineries.</p>
+				</div>
+				<div class="col-lg-12 ">
+					<div id='map' class="custom-popup">
+										<script>
+									  
+										//crea el mapa, centra la vista y define el zoom
+										var map = L.map('map').setView([41.37, -1.175],10);
+										map.removeControl(map.zoomControl);
+										
+										//estilo para los límites de la DO
+										var estilolimite = {
+										"color": "#CC2EFA",
+										"weight": 2, 
+										"opacity": 0.6
+										};
+										
+										//añade los límites de la DO
+										var limite = L.geoJson(limite, { style: estilolimite });
+										limite.addTo(map);
+										
+										//añade Open Street map como mapa base
+										var base = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+										
+										base.addTo(map);
+										
+
+
+										var wikimedia = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
+											attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
+										});	
+										
+										//capa ortofoto aérea
+										var ortofoto = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+										attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+										});
+
+										//crea el clúster de puntos
+										var markers = L.markerClusterGroup();
+											
+										//función que muestra el nombre de la bodega en el popup
+										function popup(feature, layer) { 
+
+											var nombre = feature.properties.CEN_DS_NOM;
+											var salto = "<br>";
+											var municipio = feature.properties.MUNICIPIO;
+											var direccion= feature.properties.LOC_DS_DIR;
+											var telefono = feature.properties.LOC_DS_TEL;
+											var paginaweb = feature.properties.LOC_DS_WEB;
+											var htmlString = "<a href="+paginaweb+" target='_blank'>Ver página web</a><br>";
+											layer.bindPopup(nombre.concat(salto,direccion,' - ',municipio,salto,telefono,salto,htmlString)); 	 
+											
+										}
+										
+										// añade puntos al cluster
+										var puntos = L.geoJson(bodegas, {
+											onEachFeature: popup
+											});	
+										markers.addLayer(puntos);
+										
+										// añade el cluster al mapa
+										map.addLayer(markers);	
+
+										//ajusta la vista a la extensión de la D.O.
+										map.fitBounds(limite.getBounds());
+										
+										//añade control capas										
+										var baseMapas = {
+										"Mapa base": base,
+										"Wikimedia": wikimedia,
+										"Foto aérea": ortofoto,
+										};
+										var overlayMapas = {
+											"Límite D.O.": limite,
+											"Bodegas": markers
+										};										
+										L.control.layers(baseMapas, overlayMapas,{
+										position: 'topright', // 'topleft', 'bottomleft', 'bottomright'
+										collapsed: true // true
+										}).addTo(map);
+										
+										
+										//añade botón para regresar al zoom original
+										var zoomHome = L.Control.zoomHome().addTo(map);
+
+										
+										//añade escala gráfica
+										L.control.scale().addTo(map);
+										
+									  </script>
+
+					</div>
+				</div>
+			</div>
+
+		<!-- Mapa bodegas -->
+		<hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+	<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4">
+                <p> Enorelax offers a unique wine tourism experience to its customers
+				</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Enorelax</span><span>. </span><span>
+				All rights reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+	              <h5>Contact</h5>
+              <dl class="contact-list">
+                <dt>Adress:</dt>
+                <dd>Paseo de Sagasta 30, Zaragoza - 50004</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">info@enorelax.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Phone:</dt>
+                <dd><a href="tel:#">+34 976 123456</a> <span> | </span> <a href="tel:#">+34 600 010203</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+               <li><a href="contacto_en.php">Contact form</a></li>
+                <li><a href="privacidad_en.php">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+	
+	
+
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+</body>
+
+</html>

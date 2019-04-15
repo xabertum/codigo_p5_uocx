@@ -1,0 +1,145 @@
+/************
+1. 991px
+************/
+
+@media only screen and (max-width: 991px) {
+    .main_nav_container {
+        display: none;
+    }
+
+    .home_slider_content h1:first-child {
+        font-size: 72px;
+    }
+
+    .home_slider_content h1:nth-child(2) {
+        font-size: 60px;
+        margin-top: -18px;
+    }
+
+    .home_slider_button {
+        margin-top: 58px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+/************
+2. 575px
+************/
+
+@media only screen and (max-width: 575px) {
+    p {
+        font-size: 13px;
+    }
+
+    .top_bar {
+        display: none;
+    }
+
+    .button {
+        height: 44px;
+        border-radius: 22px;
+    }
+
+    .button a {
+        line-height: 44px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    header.scrolled .logo a img {
+        height: 30px !important;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .home_slider_nav {
+        display: none !important;
+    }
+
+    .home_slider_content h1:first-child {
+        font-size: 48px;
+    }
+
+    .home_slider_content h1:nth-child(2) {
+        font-size: 43px;
+        margin-top: -12px;
+    }
+
+    .home_slider_button {
+        margin-top: 45px;
+    }
+
+    .home_slider_dots {
+        display: none !important;
+    }
+
+    .main_nav_col {
+        height: 60px;
+    }
+
+    .header.scrolled .main_nav_col {
+        height: 60px;
+    }
+
+    .logo_container {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+
+    .header.scrolled .content_search {
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+
+    .hamburger {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .logo a img {
+        height: 30px !important;
+        margin-right: 7px;
+    }
+
+    .hamburger i {
+        font-size: 18px;
+    }
+
+    
+    .menu_close_container {
+        top: 15px;
+        right: 28px;
+    }
+
+    .menu_logo {
+        margin-bottom: 17px;
+    }
+
+    .menu_logo a img {
+        width: 28px !important;
+    }
+
+    .menu_item a {
+        font-size: 24px;
+    }
+
+}
